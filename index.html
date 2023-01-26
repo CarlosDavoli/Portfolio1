@@ -16,12 +16,16 @@
                     <div class="brand">
                         <h2>J<span>C</span> </h2>
                     </div>
-                    <ul class="menu">
+                    <ul class="menu" id="menu">
                         <li><a class="active" href="#">Home</a></li>
                         <li><a href="#">About me</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                    <div class="toggle-menu">
+                        <i class="fas fa-bars" id="toggle_open"></i>
+                        <i class="fas fa-close" id="toggle_close"></i>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -29,20 +33,26 @@
 
         <main class="main">
             <div class="info-content">
-                <h1> Somos <span>Proding</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum molestiae magnam consequatur, officia dolore quam! Hic sed similique sunt iste molestias? Aut deserunt rem culpa quo officia consectetur, vero voluptatum dignissimos nemo magnam atque perspiciatis fuga earum aliquam ad nulla ullam blanditiis delectus molestias temporibus. Id, autem ducimus? Reprehenderit facere a architecto maxime neque nam, ab aut dignissimos cumque! Libero quod earum magnam sed veniam. Perferendis, qui quos repellendus consectetur aut dolores! Molestiae placeat ipsum cumque doloribus expedita molestias quo, ut at ex eveniet quasi tempore quibusdam dolorem aspernatur, amet aliquid voluptas, veniam reprehenderit sequi ab fugit consequatur officiis.</p>
-                <a download href="img/Curriculum vitae Carlos Davoli.pdf">
+                <span class="info-content__subtitule">Un Subtitulo</span>
+                <h1> Somos <span>PRODING</span></h1>
+                <div class="sotial-networks info-content__sotial-networks">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                  </div>
+                <p class="info-content__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum molestiae magnamis.</p>
+                <a download href="./img/Curriculum vitae Carlos Davoli.pdf">
                     <button class="download-cv">Descargar CV</button>
                 </a>
             </div>
-            <img src="/img/pexels-photo-1516680-removebg-preview.png" alt="fotoBoton">
+            <img src="./img/pexels-photo-1516680-removebg-preview.png" alt="fotoBoton">
         </main>
     </div>
 
 
 
     <div class="about">
-        <img src="/img/about.png" alt="about us">
+        <img src="./img/about.png" alt="about us">
 
         <div class="about-info">
             <h2>about me</h2>
@@ -159,7 +169,7 @@
         
 
         <div class="container-contact">
-            <img src="/img/img-opacity50.png" alt="">
+            <img src="./img/img-opacity50.png" class="ccontact-section__img" alt="imagen de contacto">
             <div class="contact-form">
                 <h4>Envia un mensaje: </h4>
 
@@ -190,5 +200,6 @@
       </footer>
 
 
+      <script src="./js/scripts.js"></script>
 </body>
 </html>
