@@ -3,6 +3,28 @@
     font-family:cano;
     src: url(../font/Cano.otf);
 }
+/* :root{
+    --color-background: #191c32;
+    --color-letters: #fff;
+    --color-letters-span:aqua;
+    --color-buttons-navar: aqua;
+    --color-buttons-active:aqua;
+    --border-image:aqua;
+    --color-lines-form:#FFF;
+    --color-background-footer:aqua;
+    --color-divider:aqua;
+} */
+:root{
+    --color-background: #0e1524;
+    --color-letters: #EDE6DB;
+    --color-letters-span:#417D7A;
+    --color-buttons-navar: #417D7A;
+    --color-buttons-active:#1D5C63;
+    --border-image:#417D7A;
+    --color-lines-form:#EDE6DB;
+    --color-background-footer:#193b3f;
+    --color-divider:#193b3f;
+}
 
 * {
     margin: 0;
@@ -20,8 +42,8 @@ body {
     /* ocupa toda la pantalla */
     width: 100vw;
     height: 100vh;
-    background-color: #191c32;
-    color: #fff;
+    background-color: var(--color-background);
+    color: var(--color-letters);
 }
 
 .navbar {
@@ -48,22 +70,22 @@ body {
 
 /* COLORES DE LETRA */
 .menu a {
-    color: #fff;
+    color: var(--color-letters);
     /* Sacarle el icono */
     text-decoration: none;
     padding: 10px 20px;
 }
 
 .brand span {
-    color: aqua;
+    color: var(--color-letters-span);
 }
 
 .menu .active {
-    color: aqua;
+    color: var(--color-buttons-active);
 }
 
 .menu a:hover {
-    background-color: aqua;
+    background-color: var(--color-buttons-navar);
     color: #191c32;
     transition: ease-in .4s;
 }
@@ -88,12 +110,12 @@ h1 {
 }
 
 span {
-    color: aqua;
+    color: var(--color-letters-span);
 }
 
 .download-cv {
     padding: 10px 20px;
-    background-color: aqua;
+    background-color: var(--color-buttons-navar);
     border: none;
     border-radius: 20px;
     margin-top: 10px;
@@ -108,7 +130,7 @@ span {
 
 .main img {
     width: 450px;
-    border: 7px solid aqua;
+    border: 7px solid var(--border-image);
     height: 32.5rem;
     margin-left: 9rem;
     min-height: 400px;
@@ -143,7 +165,7 @@ span {
 .divider {
     height: 4px;
     width: 60px;
-    background-color: aqua;
+    background-color: var(--color-divider);
     margin-top: 5px;
     margin-bottom: 2em;
 }
@@ -159,8 +181,8 @@ span {
 .portfolio,
 .contact-section {
     width: 100vw;
-    background-color: #191c32;
-    color: #fff;
+    background-color: var(--color-background);
+    color: var(--color-letters);
 
 }
 
@@ -172,7 +194,7 @@ span {
 .porfolio-headings h2,
 .contact-section h2 {
     font-size: 2.5em;
-    color: #fff;
+    color: var(--color-letters);
 }
 
 .portfolio .container {
@@ -188,7 +210,7 @@ span {
     width: 300px;
     height: 325px;
     background-color: rgb(37, 42, 85);
-    color: #fff;
+    color: var(--color-letters);
     margin: 1em;
 }
 
@@ -209,7 +231,7 @@ span {
 }
 
 .card__projects-links a {
-    color: #fff;
+    color: var(--color-letters);
     text-decoration: none;
 }
 
@@ -276,16 +298,16 @@ span {
     margin-bottom: 1em;
     background: none;
     border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff
+    border-bottom: 1px solid var(--color-lines-form);
+    color: var(--color-letters)
 }
 
 .form textarea {
     height: 150px;
     background: none;
-    color: #fff;
+    color: var(--color-letters);
     padding: 1.5em;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-lines-form);
 }
 
 .btn-submit {
@@ -314,7 +336,7 @@ span {
     width: 100vw;
     height: 25vh;
     padding: 2em;
-    background-color: aqua;
+    background-color: var(--color-background-footer);
 }
 
 .footer-content1 h2 {
@@ -337,7 +359,34 @@ span {
     font-size: 1.5em;
 }
 
-
+/* BOTON DE WSP */
+.btnWsp {
+	position:fixed;
+	z-index: 999;
+	bottom: 1vh;
+	right: 1vh;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	font-size: 3.5rem;
+	font-weight: bold;
+	background-color: white;
+	color: #00bb2d;
+	cursor: pointer;
+	outline: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+  
+ .btnWsp:hover {
+	background-color: #00bb2d;
+	color: white;
+  }
+  
+ .btnWsp .hidden {
+	visibility: hidden;
+	opacity: 0;
+  }
 /* HACER TODO RESPONSIVE */
 
 .toggle-menu,
@@ -356,7 +405,7 @@ span {
         top: 0;
         left: 0;
         height: 100vh;
-        background-color: #2b3058;
+        background-color: var(--color-background);
         z-index: 1;
         transform: translateX(-110%);
         transition: all .5s ease-in-out;
